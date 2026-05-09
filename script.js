@@ -17,6 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.setAttribute('aria-expanded',
         navLinks.classList.contains('open'));
     });
+
+    // Close menu when a nav link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
   }
 
   // --- Scroll-triggered fade-in animations ---
