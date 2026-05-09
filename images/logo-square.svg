@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0C94B"/>
+      <stop offset="100%" style="stop-color:#D4A017"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2EC4B6"/>
+      <stop offset="100%" style="stop-color:#1A9E92"/>
+    </linearGradient>
+    <linearGradient id="tealLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5DD9CE"/>
+      <stop offset="100%" style="stop-color:#2EC4B6"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4F5F2"/>
+      <stop offset="100%" style="stop-color:#FFFFFF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" rx="40" fill="url(#bgGrad)"/>
+
+  <!-- Outer decorative ring -->
+  <circle cx="250" cy="210" r="155" fill="none" stroke="url(#tealLight)" stroke-width="2" stroke-dasharray="8 5" opacity="0.45"/>
+
+  <!-- Inner circle backdrop -->
+  <circle cx="250" cy="210" r="130" fill="white" opacity="0.6"/>
+
+  <!-- Craft scissors icon (centred, larger) -->
+  <g transform="translate(200, 130) scale(1.8)" fill="url(#tealGrad)">
+    <ellipse cx="12" cy="8" rx="10" ry="5" transform="rotate(-30 12 8)" />
+    <ellipse cx="40" cy="8" rx="10" ry="5" transform="rotate(30 40 8)" />
+    <circle cx="8" cy="28" r="9" fill="none" stroke="url(#tealGrad)" stroke-width="3"/>
+    <circle cx="44" cy="28" r="9" fill="none" stroke="url(#tealGrad)" stroke-width="3"/>
+    <line x1="16" y1="22" x2="26" y2="12" stroke="url(#tealGrad)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="36" y1="22" x2="26" y2="12" stroke="url(#tealGrad)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M26 12 Q26 -5 42 -8 Q58 -10 62 2" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3"/>
+    <circle cx="62" cy="2" r="2.5" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Gold sparkles -->
+  <g fill="url(#goldGrad)">
+    <polygon points="330,155 333,163 341,163 335,168 337,176 330,171 323,176 325,168 319,163 327,163"/>
+    <polygon points="155,175 157,180 162,180 158,183 159,188 155,185 151,188 152,183 148,180 153,180" transform="scale(0.8) translate(20, 10)"/>
+    <polygon points="370,200 371.5,204 376,204 372.5,206.5 373.5,210.5 370,208 366.5,210.5 367.5,206.5 364,204 368.5,204" />
+  </g>
+
+  <!-- "Made by" text -->
+  <text x="250" y="310" font-family="'Playfair Display', Georgia, serif" font-size="38" font-weight="400" fill="#3A3A3A" text-anchor="middle" letter-spacing="3">
+    Made by
+  </text>
+
+  <!-- "Liv" text large -->
+  <text x="250" y="370" font-family="'Playfair Display', Georgia, serif" font-size="72" font-weight="700" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="2">
+    Liv
+  </text>
+
+  <!-- Decorative swash underline -->
+  <path d="M140 385 Q195 385 250 392 Q305 399 360 385" 
+        fill="none" stroke="url(#tealGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Tagline -->
+  <text x="250" y="425" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#1A9E92" text-anchor="middle" letter-spacing="4">
+    HANDCRAFTED WITH LOVE
+  </text>
+
+  <!-- Bottom decorative dots -->
+  <circle cx="200" cy="450" r="3" fill="url(#goldGrad)" opacity="0.5"/>
+  <circle cx="250" cy="455" r="2" fill="url(#tealGrad)" opacity="0.4"/>
+  <circle cx="300" cy="450" r="3" fill="url(#goldGrad)" opacity="0.5"/>
+</svg>
