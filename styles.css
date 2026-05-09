@@ -663,10 +663,16 @@ footer {
     padding: 24px;
     gap: 16px;
     transform: translateY(-120%);
-    transition: transform 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   }
-  .nav-links.open { transform: translateY(0); }
+  .nav-links.open {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
   .menu-toggle { display: flex; }
 
   .nav-links li { text-align: center; }
